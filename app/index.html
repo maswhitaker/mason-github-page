@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>github repo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/main.scss">
+    </head>
+    <body>
+        <script type ="text/template" id="information">
+          <img src="<%= avatar_url %>">
+          <h1> <%= name %> </h1>
+          <h2> <%= login %> </h2>
+          <h2> <%= email %> </h2>
+          <h3> <%= location %> </h3>
+          <a href="www.masonwhitaker.com"><%= blog %></a>
+          <a href="<%= followers_url %>"><%= followers %></a>
+          <a href="<%= starred_url %>">1</a>
+          <a href="<%= following_url %>"><%= following %></a>
+          </script>
+          <div id="target"></div>
+          <script src="bower_components/jquery/dist/jquery.js"></script>
+          <script src="bower_components/underscore/underscore.js"></script>
+          <script src="bower_components/modernizr/modernizr.js"></script>
+          <script src="scripts/main.js"></script>
+    </body>
+</html>
