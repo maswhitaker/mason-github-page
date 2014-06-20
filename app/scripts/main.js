@@ -29,13 +29,12 @@ var items = {
   "following": 8,
   "created_at": "2014-04-14T03:28:32Z",
   "updated_at": "2014-06-19T05:20:00Z"
-};
+}
 
 var infolog = $("#information").html();
 $("#target").append(_.template(infolog,items));
 
-var repos = [
-  {
+var repos = [{
     "id": 20747219,
     "name": "d3",
     "full_name": "maswhitaker/d3",
@@ -57,7 +56,7 @@ var repos = [
       "received_events_url": "https://api.github.com/users/maswhitaker/received_events",
       "type": "User",
       "site_admin": false
-    },
+              },
     "private": false,
     "html_url": "https://github.com/maswhitaker/d3",
     "description": "A JavaScript visualization library for HTML and SVG.",
@@ -121,7 +120,7 @@ var repos = [
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+{
     "id": 20971237,
     "name": "etsy-page",
     "full_name": "maswhitaker/etsy-page",
@@ -207,7 +206,7 @@ var repos = [
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+{
     "id": 21013421,
     "name": "mason-github-page",
     "full_name": "maswhitaker/mason-github-page",
@@ -271,8 +270,8 @@ var repos = [
     "labels_url": "https://api.github.com/repos/maswhitaker/mason-github-page/labels{/name}",
     "releases_url": "https://api.github.com/repos/maswhitaker/mason-github-page/releases{/id}",
     "created_at": "2014-06-19T19:49:47Z",
-    "updated_at": "2014-06-19T20:05:36Z",
-    "pushed_at": "2014-06-19T20:05:35Z",
+    "updated_at": "2014-06-20T04:50:28Z",
+    "pushed_at": "2014-06-20T04:50:28Z",
     "git_url": "git://github.com/maswhitaker/mason-github-page.git",
     "ssh_url": "git@github.com:maswhitaker/mason-github-page.git",
     "clone_url": "https://github.com/maswhitaker/mason-github-page.git",
@@ -293,7 +292,7 @@ var repos = [
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+{
     "id": 20938578,
     "name": "maswhitaker.github.io",
     "full_name": "maswhitaker/maswhitaker.github.io",
@@ -379,7 +378,7 @@ var repos = [
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+{
     "id": 20842219,
     "name": "Personal-Link-Page",
     "full_name": "maswhitaker/Personal-Link-Page",
@@ -465,29 +464,29 @@ var repos = [
     "watchers": 0,
     "default_branch": "master"
   },
-  {
-    "id": 20452957,
-    "name": "ProjectNumber1",
-    "full_name": "maswhitaker/ProjectNumber1",
-    "owner": {
-      "login": "maswhitaker",
-      "id": 7285459,
-      "avatar_url": "https://avatars.githubusercontent.com/u/7285459?",
-      "gravatar_id": "3d539bab05359808b810c283a944ee94",
-      "url": "https://api.github.com/users/maswhitaker",
-      "html_url": "https://github.com/maswhitaker",
-      "followers_url": "https://api.github.com/users/maswhitaker/followers",
-      "following_url": "https://api.github.com/users/maswhitaker/following{/other_user}",
-      "gists_url": "https://api.github.com/users/maswhitaker/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/maswhitaker/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/maswhitaker/subscriptions",
-      "organizations_url": "https://api.github.com/users/maswhitaker/orgs",
-      "repos_url": "https://api.github.com/users/maswhitaker/repos",
-      "events_url": "https://api.github.com/users/maswhitaker/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/maswhitaker/received_events",
-      "type": "User",
-      "site_admin": false
-    },
+{
+      "id": 20452957,
+      "name": "ProjectNumber1",
+      "full_name": "maswhitaker/ProjectNumber1",
+      "owner": {
+        "login": "maswhitaker",
+        "id": 7285459,
+        "avatar_url": "https://avatars.githubusercontent.com/u/7285459?",
+        "gravatar_id": "3d539bab05359808b810c283a944ee94",
+        "url": "https://api.github.com/users/maswhitaker",
+        "html_url": "https://github.com/maswhitaker",
+        "followers_url": "https://api.github.com/users/maswhitaker/followers",
+        "following_url": "https://api.github.com/users/maswhitaker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/maswhitaker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/maswhitaker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/maswhitaker/subscriptions",
+        "organizations_url": "https://api.github.com/users/maswhitaker/orgs",
+        "repos_url": "https://api.github.com/users/maswhitaker/repos",
+        "events_url": "https://api.github.com/users/maswhitaker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/maswhitaker/received_events",
+        "type": "User",
+        "site_admin": false
+      },
     "private": false,
     "html_url": "https://github.com/maswhitaker/ProjectNumber1",
     "description": "Surf and Paddle Co.",
@@ -550,8 +549,19 @@ var repos = [
     "open_issues": 0,
     "watchers": 0,
     "default_branch": "master"
-  }
-];
+  }];
 
-var repolog = $("#repo-information").html();
-$("#second-target").append(_.template(repolog,repos));
+  // Create a forEach loop that returns each object from array
+
+// var repolog = $("#repo-information").html();)
+//
+// _.each(repos, function(repo){
+//   $('#second-target').append(_.template(repolog,repo));
+// });
+
+// $("#second-target").append(_.template(repolog,repo1));
+// $("#second-target").append(_.template(repolog,repo2));
+// $("#second-target").append(_.template(repolog,repo3));
+// $("#second-target").append(_.template(repolog,repo4));
+// $("#second-target").append(_.template(repolog,repo5));
+// $("#second-target").append(_.template(repolog,repo6));
