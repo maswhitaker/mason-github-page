@@ -35,14 +35,65 @@
           <p>Following</p>
           </div>
           </script>
+
+          <section>
+            <div>
+              <a href="#">Contributions</a>
+            </div>
+            <div>
+              <a href="#">Repositories</a>
+            </div>
+            <div>
+              <a href="#">Recent Activity</a>
+            </div>
+          </section>
+
+
+
           <script type="text/template" id="repo-information">
-          <h1><%= repo.name %></h1>
+          <div id="repositories">
+            <div>
+              <p>Popular Repositories</p>
+            </div>
+            <div>
+              <h1><%= repos[0].name %></h1>
+              <h2><%= repos[0].description %></h2>
+            </div>
+            <div>
+              <h1><%= repos[1].name %></h1>
+              <h2><%= repos[1].description %></h2>
+            </div>
+            <div>
+              <h1><%= repos[2].name %></h1>
+              <h2><%= repos[2].description %></h2>
+            </div>
+            <div>
+              <h1><%= repos[3].name %></h1>
+              <h2><%= repos[3].description %></h2>
+            </div>
+            <div>
+              <h1><%= repos[4].name %></h1>
+              <h2><%= repos[4].description %></h2>
+            </div>
+            <div>
+              <h1><%= repos[5].name %></h1>
+              <h2><%= repos[5].description %></h2>
+            </div>
+          </div>
           </script>
+
+          <!-- Targets -->
           <div id="target"></div>
           <div id="second-target"></div>
+
+          <!-- Scripts -->
           <script src="bower_components/jquery/dist/jquery.js"></script>
           <script src="bower_components/underscore/underscore.js"></script>
           <script src="bower_components/modernizr/modernizr.js"></script>
           <script src="scripts/main.js"></script>
+
+          <article>
+            <h1>Recent Commits</h1>
+          <article>
     </body>
 </html>

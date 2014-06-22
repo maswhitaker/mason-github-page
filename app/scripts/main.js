@@ -551,17 +551,18 @@ var repos = [{
     "default_branch": "master"
   }];
 
-  // Create a forEach loop that returns each object from array
+var repolog = $("#repo-information").html();
 
-// var repolog = $("#repo-information").html();)
-//
-// _.each(repos, function(repo){
-//   $('#second-target').append(_.template(repolog,repo));
+// var dumdum = repos.forEach(function(word){
+//   for(i= 0; i < repos.length; i++){
+//       return repos[i];
+//   };
 // });
 
-// $("#second-target").append(_.template(repolog,repo1));
-// $("#second-target").append(_.template(repolog,repo2));
-// $("#second-target").append(_.template(repolog,repo3));
-// $("#second-target").append(_.template(repolog,repo4));
-// $("#second-target").append(_.template(repolog,repo5));
-// $("#second-target").append(_.template(repolog,repo6));
+var dumdum = _.each(repos, function(word){
+  for(i= 0; i < repos.length; i++){
+    return repos[i];
+  };
+});
+
+$('#second-target').append(_.template(repolog,dumdum));
