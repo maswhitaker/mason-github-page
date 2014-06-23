@@ -1,5 +1,5 @@
 {
-  "name": "new-github-thing",
+  "name": "github-page",
   "private": true,
   "dependencies": {
     "modernizr": "~2.6.2",

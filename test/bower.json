@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "new-github-thing",
+=======
+  "name": "github-page",
+>>>>>>> 12ce8f9ed287244a5b344405d6fcb8febea5547d
   "private": true,
   "dependencies": {
     "chai": "~1.8.0",

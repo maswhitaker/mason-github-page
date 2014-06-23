@@ -1,5 +1,6 @@
+
 "use strict";
-/*global _, */
+/*global _,token */
 
 var userInfo = $.getJSON("https://api.github.com/users/maswhitaker?client_id=" + token, function(data){
   console.log("starting process");
@@ -28,6 +29,10 @@ console.log(userInfo.responseJSON);
 
 var infolog = $("#information").html();
 $("#target").append(_.template(infolog,userInfo.responseJSON));
+
+var infolog = $("#information").html();
+$("#target").append(_.template(infolog,items));
+>>>>>>> 12ce8f9ed287244a5b344405d6fcb8febea5547d
 
 var repos = [{
     "id": 20747219,
@@ -547,6 +552,7 @@ var repos = [{
   }];
 
 var repolog = $("#repo-information").html();
+
 var dumdum = _.each(repos, function(word){
   for(i= 0; i < repos.length; i++){
     return repos[i];
