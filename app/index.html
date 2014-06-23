@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>new github thing</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+
+      <header>
+        <a href="#">Explore</a>
+        <a href="#">Gist</a>
+        <a href="#">Blog</a>
+        <a href="#">Help</a>
+        <a href="#" id="seperate">maswhitaker</a>
+      </header>
+
+        <script type ="text/template" id="information">
+          <img src="<%= avatar_url %>">
+          <h1> <%= name %> </h1>
+          <h2> <%= login %> </h2>
+          <div id="below-head">
+            <h3> <%= location %> </h3>
+            <a href="#"> <%= email %> </a>
+            <a href="www.masonwhitaker.com"><%= blog %></a>
+            <p>Join date: <%= created_at %></p>
+          </div>
+          <div id="follow">
+          <a href="<%= followers_url %>"><%= followers %></a>
+          <a href="<%= starred_url %>">1</a>
+          <a href="<%= following_url %>"><%= following %></a>
+          <p>Followers</p>
+          <p>Starred</p>
+          <p>Following</p>
+          </div>
+          </script>
+
+          <section>
+            <div id="con">
+              <a href="#">Contributions</a>
+            </div>
+            <div id="rep">
+              <a href="#">Repositories</a>
+            </div>
+            <div id="rec">
+              <a href="#">Recent Activity</a>
+            </div>
+          </section>
+          <article>
+            <h1>Contribution Activity</h1>
+          <article>
+
+
+          <script type="text/template" id="repo-information">
+          <div id="repositories">
+            <div>
+              <p>Popular Repositories</p>
+            </div>
+            <div>
+              <h1><%= repos[0].name %></h1>
+              <h2><%= repos[0].description %></h2>
+            </div>
+            <div>
+              <h1><%= repos[1].name %></h1>
+              <h2><%= repos[1].description %></h2>
+            </div>
+            <div>
+              <h1><%= repos[2].name %></h1>
+              <h2><%= repos[2].description %></h2>
+            </div>
+            <div>
+              <h1><%= repos[3].name %></h1>
+              <h2><%= repos[3].description %></h2>
+            </div>
+            <div>
+              <h1><%= repos[4].name %></h1>
+              <h2><%= repos[4].description %></h2>
+            </div>
+            <div>
+              <h1><%= repos[5].name %></h1>
+              <h2><%= repos[5].description %></h2>
+            </div>
+          </div>
+          </script>
+
+          <!-- Targets -->
+          <div id="target"></div>
+          <div id="second-target"></div>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="scripts/apiToken.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
