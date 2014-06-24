@@ -30,19 +30,19 @@
       </header>
 
         <script type ="text/template" id="information">
-          <img src="<%= avatar_url %>">
-          <h1> <%= name %> </h1>
-          <h2> <%= login %> </h2>
+          <img src="<%= user.responseJSON.avatar_url %>">
+          <h1> <%= user.responseJSON.name %> </h1>
+          <h2> <%= user.responseJSON.login %> </h2>
           <div id="below-head">
-            <h3> <%= location %> </h3>
-            <a href="#"> <%= email %> </a>
-            <a href="www.masonwhitaker.com"><%= blog %></a>
-            <p>Join date: <%= created_at %></p>
+            <h3> <%= user.responseJSON.location %> </h3>
+            <a href="#"> <%= user.responseJSON.email %> </a>
+            <a href="www.masonwhitaker.com"><%= user.responseJSON.blog %></a>
+            <p>Join date: <%= user.responseJSON.created_at %></p>
           </div>
           <div id="follow">
-          <a href="<%= followers_url %>"><%= followers %></a>
-          <a href="<%= starred_url %>">1</a>
-          <a href="<%= following_url %>"><%= following %></a>
+          <a href="<%= user.responseJSON.followers_url %>"><%= user.responseJSON.followers %></a>
+          <a href="<%= user.responseJSON.starred_url %>">1</a>
+          <a href="<%= user.responseJSON.following_url %>"><%= user.responseJSON.following %></a>
           <p>Followers</p>
           <p>Starred</p>
           <p>Following</p>
@@ -72,28 +72,28 @@
               <p>Popular Repositories</p>
             </div>
             <div>
-              <h1><%= repos[0].name %></h1>
-              <h2><%= repos[0].description %></h2>
+              <h1><%= repoInfo.responseJSON[0].name %></h1>
+              <h2><%= repoInfo.responseJSON[0].description %></h2>
             </div>
             <div>
-              <h1><%= repos[1].name %></h1>
-              <h2><%= repos[1].description %></h2>
+              <h1><%= repoInfo.responseJSON[1].name %></h1>
+              <h2><%= repoInfo.responseJSON[1].description %></h2>
             </div>
             <div>
-              <h1><%= repos[2].name %></h1>
-              <h2><%= repos[2].description %></h2>
+              <h1><%= repoInfo.responseJSON[2].name %></h1>
+              <h2><%= repoInfo.responseJSON[2].description %></h2>
             </div>
             <div>
-              <h1><%= repos[3].name %></h1>
-              <h2><%= repos[3].description %></h2>
+              <h1><%= repoInfo.responseJSON[3].name %></h1>
+              <h2><%= repoInfo.responseJSON[3].description %></h2>
             </div>
             <div>
-              <h1><%= repos[4].name %></h1>
-              <h2><%= repos[4].description %></h2>
+              <h1><%= repoInfo.responseJSON[4].name %></h1>
+              <h2><%= repoInfo.responseJSON[4].description %></h2>
             </div>
             <div>
-              <h1><%= repos[5].name %></h1>
-              <h2><%= repos[5].description %></h2>
+              <h1><%= repoInfo.responseJSON[5].name %></h1>
+              <h2><%= repoInfo.responseJSON[5].description %></h2>
             </div>
           </div>
           </script>
