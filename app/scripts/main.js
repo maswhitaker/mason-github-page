@@ -1,8 +1,12 @@
-
 "use strict";
 /*global _,token */
+
+/* Use this variable to change the content. */
+var username = "maswhitaker";
+
+/* First AJAX call to request user information */
 var template = $('#information').html();
-var user = $.getJSON("https://api.github.com/users/maswhitaker?client_id=" + token, function(data){
+var user = $.getJSON("https://api.github.com/users/" + username + "?client_id=" + token, function(data){
   console.log("starting process");
 });
   user.done(function(){
@@ -13,13 +17,7 @@ var user = $.getJSON("https://api.github.com/users/maswhitaker?client_id=" + tok
     console.log( "error" );
 });
 
-//
-// var boop = _.each(repoInfo,function(){
-//   for(i=0;i<repoInfo;i++){
-//     return repoInfo[i];
-//   };
-// });
-
+/* Second AJAX call to request repository information */
 var template2 = $('#repo-information').html();
 var repoInfo = $.getJSON("https://api.github.com/users/maswhitaker/repos?client_id=" + token, function(date){
   console.log("starting second process")
@@ -31,19 +29,3 @@ var repoInfo = $.getJSON("https://api.github.com/users/maswhitaker/repos?client_
     console.log("error");
   });
 });
-
-
-
-
-
-
-
-
-//
-// var repolog = $("#repo-information").html();
-// var dumdum = _.each(repos, function(word){
-//   for(i= 0; i < repos.length; i++){
-//     return repos[i];
-//   };
-// });
-// $('#second-target').append(_.template(repolog,dumdum));
